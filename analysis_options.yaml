@@ -1,0 +1,26 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    avoid_print: true
+    always_declare_return_types: true
+    always_put_required_named_parameters_first: true
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    use_key_in_widget_constructors: true
+    unawaited_futures: true
+    public_member_api_docs: false
+    prefer_final_locals: true
+    prefer_final_in_for_each: true
+    directives_ordering: true
+    cascade_invocations: true
+    prefer_single_quotes: true
+
+analyzer:
+  errors:
+    missing_required_param: error
+    missing_return: error
+    dead_code: error
+    unused_import: warning
+  exclude:
+    - build/**
